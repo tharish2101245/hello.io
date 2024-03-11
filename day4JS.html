@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function textreturn(){
+        //     console.log(document.getElementById('ptag'));  
+        // }
+        // function colorchange(){
+        //     document.getElementById('ptag').style.border="1px solid black";
+        // }
+        function addText(){
+            var a=document.getElementById("name").value;
+            var b=document.getElementById("age").value;
+            document.getElementById("b").innerHTML=`<tabel><thead><tr><th>Name</th><th></th></tr><thead>
+                <tbody>
+                    <tr>
+                        <td>${a}</td>
+                        <td>${b}</td>
+                            </tr>
+                    </tbody>
+                </tabel>`
+            // a.style="display:none";
+        }
+        function submitS(){
+             var val=document.getElementById("fruit").value;
+             document.getElementById("b").innerText=val
+
+
+        }
+        function 
+        </script>
+</head>
+<body onload="colorchange()">
+    <p id="ptag"></p>
+    <form>
+        <label for="name">Name : </label>
+        <input type="text" placeholder="Enter Your Name" name="name" id="name">
+        <label for="age">Age : </label>
+        <input type="number" placeholder="Enter Your Age" name="age" id="age">
+        <label for="fruit">Fruit</label>
+        
+        <select name="fruit" id="fruit" onchange="submitS()">
+                <option value="apple">Apple</option>
+                <option value="mango">Mango</option>
+                <option value="orange">Orange</option>
+                
+                </select>
+    </form>
+            <p id="para"></p>
+    <button onclick="addText()">Submit</button>
+    <p id="b"></p>
+    <button onclick="add()">add</button>
+    <button onclick="remove()">remove</button>
+    <button onclick="toggle()">Toggle</button>
+</body>
+</html>
